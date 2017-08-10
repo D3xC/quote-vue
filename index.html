@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>quote-vue</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+  </head>
+  <body>
+    <div>
+      <header class="vuenav navbar-fixed">
+      <nav id="menu" class="blue">
+        <div class="nav-wrapper">
+          <div class="container">
+            <a href="#!" class="brand-logo">
+              <span class="logo-dexter">Dexter</span>
+              <span class="logo-campbell"><strong>Campbell</strong></span>
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons menu-icon white-text">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li data-menuanchor="homeSection"><a href="/">Home</a></li>
+              <li data-menuanchor="aboutSection"><router-link to="/quote"><a>Quote</a></router-link></li>
+              <li data-menuanchor="portfolioSection"><router-link to="#/portfolio"><a>Portfolio</a></router-link></li>
+              <li data-menuanchor="contactSection"><router-link to="#/contact"><a class="menu-item">Contact</a></router-link></li>
+            </ul>
+            <ul class="side-nav blue" id="mobile-demo">
+              <li data-menuanchor="homeSection"><a class="menu-item white-text" href="#homeSection">Home</a></li>
+              <li data-menuanchor="aboutSection"><a class="menu-item white-text" href="#aboutSection">About</a></li>
+              <li data-menuanchor="portfolioSection"><a class="menu-item white-text" href="#portfolioSection">Portfolio</a></li>
+              <li data-menuanchor="contactSection"><a class="menu-item white-text" href="#contactSection">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    </div>
+    <div id="app" class="container"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
